@@ -6,8 +6,8 @@ import { createStore, applyMiddleware } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 
 import Api from './api'
-import Counter from './Counter'
-import reducer from './reducers'
+import Counter from './components/Counter'
+import reducer from './reducers/reducer'
 import rootSaga from './sagas'
 
 const api = new Api();
