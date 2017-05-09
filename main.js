@@ -11,7 +11,6 @@ import reducer from './reducers'
 import rootSaga from './sagas'
 
 const api = new Api();
-window.api = api;
 const sagaMiddleware = createSagaMiddleware()
 const store = createStore(
   reducer,
@@ -31,7 +30,6 @@ function render() {
     document.getElementById('root')
   )
 }
-
 
 render()
 store.subscribe(render)
